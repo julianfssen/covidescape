@@ -1,17 +1,17 @@
 {% extends "destinations/base.html" %}
 {% block content %}
-	<form class="form-inline">
+	<form class="form-inline" action="{% url 'destinations' %}" method="GET">
 		<h4>I want to go somewhere in </h4>
-	  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-	      <option selected>Asia</option>
-	      <option value="eu">Europe</option>
-	      <option value="af">Africa</option>
-	      <option value="am">America</option>
+	  <select class="custom-select my-1 mr-sm-2" name="region" id="region">
+	      <option value="asia" selected>Asia</option>
+	      <option value="europe">Europe</option>
+	      <option value="africa">Africa</option>
+	      <option value="america">America</option>
 	    </select>
 
-	    <h4> during </h4>
+<!-- 	    <h4> during </h4>
 	  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-	      <option selected>Summer</option>
+	      <option value="as" selected>Summer</option>
 	      <option value="win">Winter</option>
 	      <option value="aut">Autumn</option>
 	      <option value="spr">Spring</option>
@@ -23,7 +23,7 @@
 	        <option value="1">$1,000-$2,500</option>
 	        <option value="2">$2,500-$5,000</option>
 	        <option value="3">more than $5,000</option>
-	      </select>
+	      </select> -->
 
 	  <button type="submit" class="btn btn-primary mb-2">Get me out of here!</button>
 	</form>
