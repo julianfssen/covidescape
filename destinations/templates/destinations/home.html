@@ -1,0 +1,30 @@
+{% extends "destinations/base.html" %}
+{% block content %}
+	<form class="form-inline">
+		<h4>I want to go somewhere in </h4>
+	  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+	      <option selected>Asia</option>
+	      <option value="eu">Europe</option>
+	      <option value="af">Africa</option>
+	      <option value="am">America</option>
+	    </select>
+
+	    <h4> during </h4>
+	  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+	      <option selected>Summer</option>
+	      <option value="win">Winter</option>
+	      <option value="aut">Autumn</option>
+	      <option value="spr">Spring</option>
+	    </select>
+
+	    <h4> with a budget of </h4>
+	    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+	        <option selected>less than $1,000</option>
+	        <option value="1">$1,000-$2,500</option>
+	        <option value="2">$2,500-$5,000</option>
+	        <option value="3">more than $5,000</option>
+	      </select>
+
+	  <button type="submit" class="btn btn-primary mb-2">Get me out of here!</button>
+	</form>
+{% endblock %}

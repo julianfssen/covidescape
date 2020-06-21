@@ -1,0 +1,16 @@
+[{
+  "name": "Kuala Lumpur",
+  "address": "21, Jalan 14/3, Seksyen 14",
+  "region": "Asia"
+},
+{
+  "name": "New York",
+  "address": "Manhattan, NY 10036, United States",
+  "region": "America"
+},
+{
+  "name": "Turin",
+  "address": "2Corso Gaetano Scirea, 50, 10151 Torino TO, Italy",
+  "region": "Europe"
+}
+]
